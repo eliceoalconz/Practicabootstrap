@@ -1,0 +1,323 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <nav>
+            <div id="mi-tab-nav" class="nav nav-tabs" role="tablist">
+                <button id="mi-tab-nav-tabla" class="nav-link active"
+                        data-bs-toggle="tab" data-bs-target="#nav-tabla"
+                        type="button" role="tab" aria-controls="nav-tabla"
+                        aria-selected="true">
+                    Tablas
+                </button>
+                <button id="mi-tab-nav-formulario" class="nav-link"
+                        data-bs-toggle="tab" data-bs-target="#nav-formulario"
+                        type="button" role="tab" aria-controls="nav-formulario"
+                        aria-selected="false">
+                    Formulario
+                </button>
+                <button id="mi-tab-nav-card" class="nav-link"
+                        data-bs-toggle="tab" data-bs-target="#nav-card"
+                        type="button" role="tab" aria-controls="nav-card"
+                        aria-selected="false">
+                    Cards
+                </button>
+                <button id="mi-tab-nav-imagen" class="nav-link"
+                        data-bs-toggle="tab" data-bs-target="#nav-imagen"
+                        type="button" role="tab" aria-controls="nav-imagen"
+                        aria-selected="false">
+                    Imagen
+                </button>
+                <button id="mi-tab-nav-autor" class="nav-link"
+                        data-bs-toggle="tab" data-bs-target="#nav-autor"
+                        type="button" role="tab" aria-controls="nav-autor"
+                        aria-selected="false">
+                    Autor
+                </button>
+            </div>
+        </nav>
+        <div id="mi-tab-contenido" class="tab-content">
+            <div id="nav-tabla" class="tab-pane fade show active p-3"
+                 role="tabpanel" aria-labelledby="mi-tab-nav-tabla">
+                <h2>Atencion de pacientes</h2>
+                <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Paciente</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Diagnostico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Modesta hurtado</td>
+      <td>56</td>
+      <td>Gastritis</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Maria mamani</td>
+      <td>4</td>
+      <td>Resfriado</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jose Gutierres</td>
+      <td>14</td>
+      <td>Diarrea</td>
+    </tr>
+  </tbody>
+</table>
+<a href="#barralateral" class="d-block mt-3" data-bs-toggle="offcanvas"
+                       role="button" aria-controls="sidebar">Pacientes que abandonaron su tratamiento</a>
+            </div>
+            <div id="nav-formulario" class="tab-pane fade p-3"
+                 role="tabpanel" aria-labelledby="mi-tab-nav-formulario">
+                <form>
+                    <div class="mb-3">
+                        <label for="Nombre" class="form-label">Nombre y apellidos</label>
+                        <input type="text" class="form-control" id="Nombre" aria-describedby="emailHelp">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                  
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+            </div>
+
+            <div id="nav-card" class="tab-pane fade p-3"
+                 role="tabpanel" aria-labelledby="mi-tab-nav-card">
+            </section>
+            <section id="precios" class="bg-light mt-5">
+                <div class="container-lg">
+                    <div class="text-center">
+                        <h2>Servicios medicos <i class="bi bi-coin"></i></h2>
+                        <p class="lead text-muted">Elija un plan combo</p>
+                    </div>
+                    <div class="row my-5 align-items-center justify-content-center">
+                        <div class="col-8 col-lg-3 col-xl-2">
+                            <div class="card border-0">
+                                <div class="card-body text-center py-4">
+                                    <h4 class="card-title">Económico</h4>
+                                    <p class="lead card-subtitle">Atencion medica general</p>
+                                    <p class="display-5 my-4 text-primary fw-bold">Bs. 20</p>
+                                    <p class="card-text mx-3 text-muted d-none d-lg-block">
+                                     Chequeo medico completo mas analisis de sangre completo
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Adquirir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9 col-lg-3">
+                            <div class="card border-2 border-primary">
+                                <div class="card-header text-center text-primary">Más popular</div>
+                                <div class="card-body text-center py-4">
+                                    <h4 class="card-title">Estándar</h4>
+                                    <p class="lead card-subtitle">Atencion medica mas ecografia</p>
+                                    <p class="display-5 my-4 text-primary fw-bold">Bs. 50</p>
+                                    <p class="card-text mx-3 text-muted d-none d-lg-block">
+                                        Chequeo medico completo mas analisis de sangre completo, mas ecografia abdominal pelvica
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Comprarlo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-3 col-xl-2">
+                            <div class="card border-0">
+                                <div class="card-body text-center py-4">
+                                    <h4 class="card-title">Solo ecografia</h4>
+                                    <p class="lead card-subtitle"></p>
+                                    <p class="display-5 my-4 text-primary fw-bold">Bs. 40</p>
+                                    <p class="card-text mx-3 text-muted d-none d-lg-block">
+                                        Solo ecografia abdominal doplerr mas resultado impreso
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Comprarlo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-3 col-xl-2">
+                            <div class="card border-0">
+                                <div class="card-body text-center py-4">
+                                    <h4 class="card-title">Solo electrocardiograma</h4>
+                                    <p class="lead card-subtitle"></p>
+                                    <p class="display-5 my-4 text-primary fw-bold">Bs. 40</p>
+                                    <p class="card-text mx-3 text-muted d-none d-lg-block">
+                                        Solo electrocardiograma con resultado impreso
+                                    </p>
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Comprarlo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+            <div id="nav-imagen" class="tab-pane fade p-3"
+                 role="tabpanel" aria-labelledby="mi-tab-nav-imagen">
+                <section id="introduccion">
+                    <div class="container-lg">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 text-center d-none d-md-block">
+                                <span class="mis_tooltips" data-bs-placement="top" title="Laptop marca HP">
+                                    <img src="recursos/imagenes/yaDRHL.jpg" alt="foto de una laptop HP" class="img-fluid">
+                                </span>
+                            </div>
+                            <div class="col-md-5 text-center text-md-start">
+                                <h1>
+                                    <div class="display-2">La alegria es salud</div>
+                                 
+                                <p class="lead my-4 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi maiores totam, aut, reiciendis fugit officia consequatur quas impedit facere sed eius fuga tenetur perferendis aliquid, quo illum esse eum voluptates?</p>
+                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="nav-autor" class="tab-pane fade p-3"
+                 role="tabpanel" aria-labelledby="mi-tab-nav-autor">
+                <section class="bg-light">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <p class="text-muted my-4">Click en el boton para vel el autor de la pagina</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-suscripcion">
+                                    Ver autor
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="modal-suscripcion" class="modal fade" tabindex="-1" aria-labelledby="modal-titulo" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-titulo">Propiedad de:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Simon Eliceo Alconz Flores</p>
+   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="barralateral" class="offcanvas offcanvas-start" tabindex="-1"
+    aria-labelledby="label-barralateral">
+   <div class="offcanvas-header">
+       <h5 id="label-barralateral" class="offcanvas-title">Abandonos</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+   </div>
+   <div class="offcanvas-body">
+    <section id="acerca">
+        <div class="container-md">
+            
+            <div class="row my-5 justify-content-around align-items-center">
+                <div class="col">
+                    <div class="accordion" id="partes">
+                        <div class="accordion-item">
+                            <h2 id="heading-1" class="accordion-header">
+                                <button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#parte-1"
+                                        aria-expanded="true" aria-controls="parte-1">
+                                    Mirha Peres
+                                </button>
+                            </h2>
+                            <div id="parte-1" class="accordion-collapse collapse show"
+                                 aria-labelledby="heading-1" data-bs-parent="#partes">
+                                <div class="accordion-body">
+                                    <p>Abandono por situacion economica</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 id="heading-2" class="accordion-header">
+                                <button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#parte-2"
+                                        aria-expanded="true" aria-controls="parte-2">
+                                    Orlando Libertas
+                                </button>
+                            </h2>
+                            <div id="parte-2" class="accordion-collapse collapse"
+                                 aria-labelledby="heading-2" data-bs-parent="#partes">
+                                <div class="accordion-body">
+                                    <p>Abandono por recuperacion aparente</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 id="heading-3" class="accordion-header">
+                                <button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#parte-3"
+                                        aria-expanded="true" aria-controls="parte-3">
+                                    Marcos Choque
+                                </button>
+                            </h2>
+                            <div id="parte-3" class="accordion-collapse collapse"
+                                 aria-labelledby="heading-3" data-bs-parent="#partes">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, ab?</p>
+                                
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 id="heading-4" class="accordion-header">
+                                <button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#parte-4"
+                                        aria-expanded="true" aria-controls="parte-4">
+                                    Celestina Feliciano
+                                </button>
+                            </h2>
+                            <div id="parte-4" class="accordion-collapse collapse"
+                                 aria-labelledby="heading-4" data-bs-parent="#partes">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, ab?</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 id="heading-4" class="accordion-header">
+                                    <button class="accordion-button" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#parte-4"
+                                            aria-expanded="true" aria-controls="parte-4">
+                                        Jose Luis Gutierres
+                                    </button>
+                                </h2>
+                                <div id="parte-4" class="accordion-collapse collapse"
+                                     aria-labelledby="heading-4" data-bs-parent="#partes">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, ab?</p>
+                                       
+                                    </div>
+                                </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+   </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
